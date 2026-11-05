@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Lab 01 - Deploy Your First Static Website to the Cloud - Cloud Computing Fundamentals">
+  <title>My First Cloud Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container navbar">
+      <a href="#home" class="brand">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+        </svg>
+        Cloud-Lab01
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#cloud">Cloud Computing</a></li>
+          <li><a href="#services">Cloud Services</a></li>
+          <li><a href="#deployment">Deployment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>My First Cloud Website</h1>
+        <p>Lab 01: Deploy Your First Static Website to the Cloud - Cloud Computing Fundamentals</p>
+        <div class="illustration-box">
+          <img src="assets/cloud.svg" alt="Cloud Computing Architecture and Service Models" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. About Me Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="card">
+          <span class="student-badge">Student Profile</span>
+          <ul class="info-list">
+            <li>
+              <strong>Full Name:</strong>
+              <span>Lý Trần Gia Khang</span>
+            </li>
+            <li>
+              <strong>Student ID:</strong>
+              <span>24110098</span>
+            </li>
+            <li>
+              <strong>Course Name:</strong>
+              <span>Cloud computing (2+1)</span>
+            </li>
+            <li>
+              <strong>Lecturer:</strong>
+              <span>Trương Thị Ngọc Phương (HCMUTE)</span>
+            </li>
+            <li>
+              <strong>Assignment:</strong>
+              <span>Lab 01 - Deploy Static Website with Public HTTPS</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Cloud Computing Section -->
+    <section id="cloud">
+      <div class="container">
+        <h2 class="section-title">What is Cloud Computing?</h2>
+        <div class="card essay-content">
+          <p>
+            According to the <strong>NIST (National Institute of Standards and Technology)</strong> definition presented
+            in Week 1 lecture, Cloud Computing is a model for enabling ubiquitous, convenient, on-demand network access
+            to a shared
+            pool of configurable computing resources
+            (such as networks, servers, storage, applications, and services) that can be rapidly provisioned and
+            released with minimal management effort
+            or service provider interaction.
+          </p>
+          <div class="highlight-box">
+            <strong>Key Characteristics (NIST):</strong> On-Demand Self-Service, Broad Network Access, Resource Pooling,
+            Rapid Elasticity, and Measured Service.
+          </div>
+          <p>
+            Unlike traditional on-premises IT infrastructure - where organizations must forecast capacity years ahead,
+            invest significant capital expenditure
+            (<strong>CapEx</strong>) into physical hardware, and maintain local data centers - cloud computing
+            fundamentally shifts the paradigm to an operational
+            expenditure (<strong>OpEx</strong>) model. Businesses pay only for what they consume
+            (<em>Pay-as-you-go</em>) while gaining instantaneous global scalability,
+            fault tolerance, and high availability powered by modern distributed systems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Cloud Services Section (IaaS, PaaS, SaaS) -->
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">Cloud Service Models</h2>
+        <p style="margin-bottom: 1.5rem; color: var(--text-muted);">
+          Cloud capabilities are delivered through three primary service models, differing by level of abstraction,
+          control, and management responsibility:
+        </p>
+        <div class="grid-3">
+          <!-- IaaS -->
+          <div class="card service-card">
+            <div>
+              <span class="service-badge badge-iaas">IaaS</span>
+              <h3>Infrastructure as a Service</h3>
+              <p>
+                Provides virtualized computing infrastructure on demand, including virtual machines, raw block/object
+                storage, and software-defined networking. The cloud provider maintains physical hardware and facilities,
+                while the customer manages operating systems, runtimes, middleware, and applications.
+              </p>
+            </div>
+            <div class="service-example">
+              <strong>Lecture Example:</strong> Amazon EC2 (Elastic Compute Cloud) - launching virtual servers with
+              custom OS and configurations.
+            </div>
+          </div>
+
+          <!-- PaaS -->
+          <div class="card service-card">
+            <div>
+              <span class="service-badge badge-paas">PaaS</span>
+              <h3>Platform as a Service</h3>
+              <p>
+                Delivers a fully managed environment for building, running, and scaling application code. Developers
+                focus solely on code and data without having to provision, patch, or configure the underlying operating
+                systems and web server infrastructure.
+              </p>
+            </div>
+            <div class="service-example">
+              <strong>Lecture Example:</strong> AWS Elastic Beanstalk - automated deployment and scaling of web
+              applications.
+            </div>
+          </div>
+
+          <!-- SaaS -->
+          <div class="card service-card">
+            <div>
+              <span class="service-badge badge-saas">SaaS</span>
+              <h3>Software as a Service</h3>
+              <p>
+                Delivers complete, turnkey applications accessible over the network (usually via a web browser or mobile
+                client). The cloud provider is entirely responsible for maintenance, infrastructure, data replication,
+                and security patching.
+              </p>
+            </div>
+            <div class="service-example">
+              <strong>Lecture Example:</strong> Microsoft 365, Google Workspace, Salesforce - end-user productivity and
+              collaboration suites.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Deployment Information Section -->
+    <section id="deployment">
+      <div class="container">
+        <h2 class="section-title">Deployment Information</h2>
+        <div class="card">
+          <div
+            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.5rem;">
+            <span class="status-pill">
+              <span class="status-dot"></span>
+              Live on Cloud
+            </span>
+            <small style="color: var(--text-muted);">Deployed via HTTPS</small>
+          </div>
+          <ul class="info-list">
+            <li>
+              <strong>Hosting Platform:</strong>
+              <span>GitHub Pages</span>
+            </li>
+            <li>
+              <strong>Public URL:</strong>
+              <span>
+                <a href="https://davidl-132.github.io/cloud-lab1/" target="_blank" rel="noopener noreferrer"
+                  class="url-link">
+                  https://davidl-132.github.io/cloud-lab1/
+                </a>
+              </span>
+            </li>
+            <li>
+              <strong>Source Repository:</strong>
+              <span>
+                <a href="https://github.com/davidl-132/cloud-lab1" target="_blank" rel="noopener noreferrer"
+                  class="url-link">
+                  https://github.com/davidl-132/cloud-lab1
+                </a>
+              </span>
+            </li>
+            <li>
+              <strong>Security Protocol:</strong>
+              <span>HTTPS (SSL/TLS Encrypted connection)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Cloud Computing Fundamentals - Lab 01. Lecturer: Truong Thi Ngoc Phuong.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
